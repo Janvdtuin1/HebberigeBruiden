@@ -1,0 +1,35 @@
+﻿@{ 
+    var gegevens = Request.Form["username"];
+
+    var gelukt = "";
+
+    if (IsPost)
+    {
+        gelukt = "hoera";
+
+
+
+    }
+
+    else
+    {
+
+        gelukt = "kut";
+    }
+
+}
+
+
+
+<form method="post">
+
+
+    Naam:<input name="username" /> <br />
+   WW: <input name="password" />
+
+    <input type="submit" value="sturen"/>
+
+    <p>@gelukt</p>
+    <p>@gegevens</p>
+    
+</form>
